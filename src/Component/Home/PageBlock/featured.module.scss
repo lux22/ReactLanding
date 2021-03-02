@@ -1,0 +1,56 @@
+// @keyframes {
+//   0% {
+//   }
+// }
+
+.featured_wrapper {
+  padding: 80px 0px;
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+  }
+  .featured_header {
+    font-family: "PoppinsSemi";
+    font-size: 50px;
+    max-width: 668px;
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+
+  .image_mask {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #83bcc5;
+      opacity: 0;
+      z-index: 1;
+      cursor: pointer;
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0.9;
+    }
+    .overlayPara {
+      position: absolute;
+      bottom: 0;
+      left: 33px;
+      max-width: 150px;
+      color: white;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.3s ease-in-out;
+      z-index: 1;
+    }
+    &:hover {
+      .overlayPara {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+}

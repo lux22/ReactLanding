@@ -1,0 +1,22 @@
+.card_container {
+  position: relative;
+  //   @media (max-width: 768px) {
+  //     > div:first-child {
+  //       height: 400px;
+  //       > img {
+  //         height: 400px;
+  //         object-fit: cover;
+  //       }
+  //     }
+  //   }
+  .text_overlay {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    left: 30px;
+    .title {
+      font-size: 22px;
+      font-family: "PoppinsSemi";
+    }
+  }
+}

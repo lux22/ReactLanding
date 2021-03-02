@@ -1,0 +1,27 @@
+.btn_block {
+  padding: 18px 65px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.root_highPriority {
+  background: #ef7061;
+  @extend .btn_block;
+  &:hover {
+    color: white;
+  }
+}
+.root_lowPriority {
+  background: #ef7061;
+  @extend .btn_block;
+  &:hover {
+    color: white;
+  }
+}
+.root_normalPriority {
+  background: #83bcc5;
+  @extend .btn_block;
+  &:hover {
+    color: white;
+  }
+}

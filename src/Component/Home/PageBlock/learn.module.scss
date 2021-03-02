@@ -1,0 +1,94 @@
+// .learn_imgwrap:nth-child(1) .learn_imgwrap:nth-child(1) .learn_img {
+//   max-width: 245px;
+// }
+.wrapper {
+  padding: 50px 0px 80px;
+  @media (max-width: 768px) {
+    padding: 0px 5px 30px;
+  }
+}
+.learn_para {
+  margin-bottom: 20px;
+  color: #889399;
+}
+.learn_left_container {
+  max-width: 350px;
+
+  .learn_tilte {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-family: "PoppinsSemi";
+    @media (max-width: 768px) {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0px 20px 50px;
+    text-align: center;
+  }
+}
+
+.learn_imgwrap {
+  &:nth-child(1) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    > div {
+      width: 100%;
+    }
+    .learn_img {
+      max-width: 245px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(0.9);
+      }
+      @media (max-width: 768px) {
+        max-width: 150px;
+      }
+    }
+  }
+  &:nth-child(2) {
+    .learn_img {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(0.93);
+      }
+    }
+  }
+  &:nth-child(3) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    > div {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .learn_img {
+      max-width: 160px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(0.9);
+      }
+      @media (max-width: 768px) {
+        max-width: 100px;
+      }
+    }
+  }
+  &:nth-child(4) {
+    // display: flex;
+    // align-items: flex-start;
+    // justify-content: flex-end;
+    > div {
+      margin-top: 20px;
+    }
+    .learn_img {
+      max-width: 229px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

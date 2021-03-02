@@ -1,0 +1,42 @@
+.dwn_bg {
+  background: #f8f9fa;
+}
+.download_app_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 55px 0px 0px;
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mob_image {
+    max-width: 370px;
+    width: 100%;
+  }
+  .download_app {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    .app_btn {
+      display: flex;
+      a {
+        max-width: 200px;
+        width: 100%;
+        margin-right: 20px;
+      }
+    }
+    .title {
+      font-family: "PoppinsSemi";
+      font-size: 40px;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    .para {
+      margin: 25px 0px;
+      color: #889399;
+    }
+  }
+}

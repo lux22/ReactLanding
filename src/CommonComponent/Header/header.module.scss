@@ -1,0 +1,53 @@
+$transition-type: ease-in;
+$texts-and-icons: #fff;
+.header {
+  position: absolute;
+  z-index: 2;
+  a {
+    font-family: "PoppinsBold";
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+}
+
+.hamburguer {
+  position: absolute;
+  width: 3em;
+  height: 2em;
+  /* margin: 3em; */
+  margin: 0px 10px 0px;
+  z-index: 1;
+  cursor: pointer;
+  right: 0;
+
+  &:hover {
+    animation: zoom 300ms $transition-type;
+  }
+}
+
+.lines {
+  background-color: $texts-and-icons;
+  width: 100%;
+  height: 5px;
+  margin: 5px 0 8px;
+  transition: all 450ms $transition-type;
+}
+
+.close-hamburguer {
+  .lines {
+    cursor: pointer;
+  }
+
+  .line_top {
+    transform: translateY(200%) rotate(45deg);
+  }
+
+  .line_mid {
+    opacity: 0;
+  }
+
+  .line_bottom {
+    transform: translateY(-200%) rotate(135deg);
+  }
+}
